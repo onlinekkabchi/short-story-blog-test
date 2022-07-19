@@ -1,7 +1,7 @@
 {
-    "app_id": "data-howmn",
+    "app_id": "application-1-qqykd",
     "config_version": 20210101,
-    "name": "data",
+    "name": "Application-1",
     "location": "US-VA",
     "provider_region": "aws-us-east-1",
     "deployment_model": "GLOBAL"
