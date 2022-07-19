@@ -1,7 +1,7 @@
 {
-    "app_id": "scary-short-story-vanilla-flavor-dejsu",
+    "app_id": "data-howmn",
     "config_version": 20210101,
-    "name": "scary-short-story-vanilla-flavor",
+    "name": "data",
     "location": "US-VA",
     "provider_region": "aws-us-east-1",
     "deployment_model": "GLOBAL"

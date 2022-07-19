@@ -1,9 +1,10 @@
 {
   "type": "module",
   "scripts": {
-    "compile:sass":"sass --watch ./sass-style/style.scss ./hosting/files/style.css"
+    "compile:sass": "sass --watch ./sass-style/style.scss ./hosting/files/style.css"
   },
   "devDependencies": {
+    "realm-cli": "^1.0.2",
     "sass": "^1.53.0"
   }
 }
