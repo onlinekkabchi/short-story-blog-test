@@ -1,7 +1,7 @@
 {
-    "app_id": "application-0-prmov",
+    "app_id": "scary-short-story-vanilla-flavor-dejsu",
     "config_version": 20210101,
-    "name": "Application-0",
+    "name": "scary-short-story-vanilla-flavor",
     "location": "US-VA",
     "provider_region": "aws-us-east-1",
     "deployment_model": "GLOBAL"
