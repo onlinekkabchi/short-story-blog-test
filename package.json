@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "compile:sass":"sass --watch ./sass-style/style.scss ./hosting/files/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
