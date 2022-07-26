@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "comment": {
+            "bsonType": "array"
+        },
+        "content": {
+            "bsonType": "string"
+        },
+        "like": {
+            "bsonType": "number"
+        },
+        "origin": {
+            "bsonType": "string"
+        },
+        "tag": {
+            "bsonType": "array"
+        },
+        "title": {
+            "bsonType": "string"
+        }
+    },
+    "title": "short_story"
+}
