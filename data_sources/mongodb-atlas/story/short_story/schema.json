@@ -1,4 +1,5 @@
 {
+    "bsontype": "object",
     "properties": {
         "_id": {
             "bsonType": "objectId"
@@ -6,13 +7,16 @@
         "comment": {
             "bsonType": "array"
         },
-        "content": {
-            "bsonType": "string"
-        },
         "like": {
             "bsonType": "number"
         },
         "origin": {
+            "bsonType": "string"
+        },
+        "story_content": {
+            "bsonType": "string"
+        },
+        "story_title": {
             "bsonType": "string"
         },
         "tag": {
@@ -22,5 +26,14 @@
             "bsonType": "string"
         }
     },
+    "required": [
+        "_id",
+        "story_title",
+        "story_content",
+        "comment",
+        "like",
+        "origin",
+        "tag"
+    ],
     "title": "short_story"
 }
