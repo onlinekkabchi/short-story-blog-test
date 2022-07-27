@@ -1,0 +1,49 @@
+{
+    "bsontype": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "comment": {
+            "additionalItems": true,
+            "bsonType": "array",
+            "items": [],
+            "maxItems": 20,
+            "minItems": 0,
+            "uniqueItems": false
+        },
+        "like": {
+            "bsonType": "number"
+        },
+        "origin": {
+            "bsonType": "string"
+        },
+        "story_content": {
+            "bsonType": "string"
+        },
+        "story_title": {
+            "bsonType": "string"
+        },
+        "tag": {
+            "additionalItems": true,
+            "bsonType": "array",
+            "items": [],
+            "maxItems": 20,
+            "minItems": 0,
+            "uniqueItems": false
+        },
+        "title": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "story_title",
+        "story_content",
+        "comment",
+        "like",
+        "origin",
+        "tag"
+    ],
+    "title": "short_story"
+}
