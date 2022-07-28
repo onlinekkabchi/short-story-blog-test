@@ -1,0 +1,41 @@
+input[type="radio"]{
+    cursor:pointer;
+    display: none;
+    &+label{
+        cursor:pointer;
+        font-weight:bold;
+    }
+    & ~ .story_content__box{
+        overflow:hidden;
+        height:0px;
+        opacity:0;
+        transition: height 500ms ease, opacity 500ms ease;
+    }
+    &:checked{
+        &~.story_content__box{
+            padding: 10px;
+            height:auto;
+            opacity: 1;
+        }
+    }
+}
+
+.story_content{
+    &__btn_group{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__btn{
+        color: white;
+        width: 50px;
+        font-size: 12px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__reply_box{
+        margin-top: 5px;
+    }
+}

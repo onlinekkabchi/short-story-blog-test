@@ -1,0 +1,20 @@
+$--background--transparent-black:rgba(0,0,0,0.65);
+$--background--transparent-black1:rgba(0,0,0,0.8);
+
+.story{
+    &_box{
+        background-color: $--background--transparent-black;
+        color: white;
+        padding: 20px;
+        max-width: 500px;
+        font-size: 14px;
+        margin: 0 auto;
+        box-shadow: 0 15px 18px rgba(0, 0, 0, 0.34);
+        border-radius: 10px;
+        margin: 10px;
+        &:hover{
+            background: rgb(116, 114, 114, 0.5);
+        }
+    }
+}
+

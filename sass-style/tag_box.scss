@@ -1,0 +1,10 @@
+.tag_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.story_tag{
+    font-size: 12px;
+    margin:5px;
+    cursor: pointer;
+}
