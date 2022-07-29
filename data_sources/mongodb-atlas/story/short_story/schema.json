@@ -5,12 +5,7 @@
             "bsonType": "objectId"
         },
         "comment": {
-            "additionalItems": true,
-            "bsonType": "array",
-            "items": [],
-            "maxItems": 20,
-            "minItems": 0,
-            "uniqueItems": false
+            "bsonType": "array"
         },
         "like": {
             "bsonType": "number"
@@ -25,12 +20,7 @@
             "bsonType": "string"
         },
         "tag": {
-            "additionalItems": true,
-            "bsonType": "array",
-            "items": [],
-            "maxItems": 20,
-            "minItems": 0,
-            "uniqueItems": false
+            "bsonType": "array"
         },
         "title": {
             "bsonType": "string"
