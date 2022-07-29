@@ -1,0 +1,27 @@
+{
+    "id": "62e3abfe929b426d21f825b7",
+    "name": "connect",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "UPDATE"
+        ],
+        "database": "story",
+        "collection": "short_story",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": false,
+        "full_document_before_change": false,
+        "unordered": false,
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "update"
+            }
+        }
+    }
+}
