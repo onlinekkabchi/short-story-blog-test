@@ -1,5 +1,9 @@
 [
     {
+        "name": "connectDataBase",
+        "private": true
+    },
+    {
         "name": "hi",
         "private": false,
         "disable_arg_logs": true
@@ -11,7 +15,7 @@
         "disable_arg_logs": true
     },
     {
-        "name": "connectDataBase",
+        "name": "update",
         "private": true
     }
 ]
