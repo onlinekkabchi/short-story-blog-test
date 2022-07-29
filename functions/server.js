@@ -5,12 +5,6 @@ import dotenv from "dotenv";
 const dot = dotenv.config();
 const uri = process.env.MONGODB_URL;
 
-if (dot.error) {
-    throw dot.error;
-}
-
-console.log(dot);
-
 const app = express();
 const port = 3000;
 
