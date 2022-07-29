@@ -14,36 +14,44 @@ console.log(dot);
 const app = express();
 const port = 3000;
 
-// const client = new MongoClient(uri, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     serverApi: ServerApiVersion.v1,
-// });
+const client = new MongoClient(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverApi: ServerApiVersion.v1,
+});
 
-// app.get("/", (req, res) => {
-//     const database = client.db("sample_mflix");
-//     const movies = database.collection("movies");
+app.get("/", (req, res) => {
+    const database = client.db("story");
+    const book = database.collection("short_story");
 
-//     const query = { runtime: { $lt: 150 } };
+    book.find({}).toArray(function (err, result) {
+        if (err) throw err;
+        console.dir(result);
+        res.send(result);
+    });
+});
 
-//     const options = {
-//         sort: { title: 1 },
-//         projection: { _id: 0, title: 1, imdb: 1 },
-//     };
+app.get("/movies", (req, res) => {
+    const database = client.db("sample_mflix");
+    const movies = database.collection("movies");
 
-//     movies
-//         .find(query, options)
-//         .limit(5)
-//         .toArray(function (err, result) {
-//             if (err) throw err;
-//             console.dir(result);
-//             res.send(result);
-//         });
-// });
+    const query = { runtime: { $lt: 150 } };
 
-// app.listen(port, () => {
-//     if (err) {
-//         console.error(err);
-//     }
-//     console.log(`서버연결 성공적, 연결port는 : ${port}`);
-// });
+    const options = {
+        sort: { title: 1 },
+        projection: { _id: 0, title: 1, imdb: 1 },
+    };
+
+    movies
+        .find(query, options)
+        .limit(20)
+        .toArray(function (err, result) {
+            if (err) throw err;
+            console.dir(result);
+            res.send(result);
+        });
+});
+
+app.listen(port, () => {
+    console.log(`서버연결 성공적, 연결port는 : ${port}`);
+});

@@ -13,19 +13,33 @@ body{
 }
 .blog_container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 50px;
 }
-.blog_title{
-    &__ko{
-        color: white;
-        font-size: 25px;
-        margin-top: 10px;
-    }
-    &__en{
-        color: white;
-        font-size: 12px;
-    }
+h2{
+    color: white;
+    font-size: 18px;
+}
+h3{
+    color: white;
+    font-size: 15px;
+}
+.story_box_container{
+    width: 450px;
+    margin: 5px;
+}
+.profile_container{
+    width: 400px;
+    background-color: $--background--transparent-black;
+    padding: 20px;
+    border-radius: 15px;
+    margin:15px;
+}
+.profile_img{
+    width: 80px;
+    height: auto;
+    border-radius: 20px;
 }

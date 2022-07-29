@@ -1,3 +1,5 @@
+import { init } from "./init.js";
+
 var titlesArr = [];
 var contentsArr = [];
 
@@ -58,5 +60,6 @@ function createStory() {
 }
 
 function testlog() {
+    init();
     console.log("test done!");
 }
